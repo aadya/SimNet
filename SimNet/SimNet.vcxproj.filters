@@ -13,5 +13,66 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="fwk">
+      <UniqueIdentifier>{2b7dbed6-e40c-49fe-871b-75ca4049d07e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Array.h">
+      <Filter>fwk</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseCollection.h">
+      <Filter>fwk</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseNotifiee.h">
+      <Filter>fwk</Filter>
+    </ClInclude>
+    <ClInclude Include="Ptr.h">
+      <Filter>fwk</Filter>
+    </ClInclude>
+    <ClInclude Include="PtrInterface.h">
+      <Filter>fwk</Filter>
+    </ClInclude>
+    <ClInclude Include="TypeTraits.h">
+      <Filter>fwk</Filter>
+    </ClInclude>
+    <ClInclude Include="Types.h">
+      <Filter>fwk</Filter>
+    </ClInclude>
+    <ClInclude Include="String.h">
+      <Filter>fwk</Filter>
+    </ClInclude>
+    <ClInclude Include="NamedInterface.h">
+      <Filter>fwk</Filter>
+    </ClInclude>
+    <ClInclude Include="Exception.h">
+      <Filter>fwk</Filter>
+    </ClInclude>
+    <ClInclude Include="ListRaw.h">
+      <Filter>fwk</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkedQueue.h">
+      <Filter>fwk</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkedList.h">
+      <Filter>fwk</Filter>
+    </ClInclude>
+    <ClInclude Include="HashMap.h">
+      <Filter>fwk</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BaseCollection.cpp">
+      <Filter>fwk</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseNotifiee.cpp">
+      <Filter>fwk</Filter>
+    </ClCompile>
+    <ClCompile Include="Exception.cpp">
+      <Filter>fwk</Filter>
+    </ClCompile>
+    <ClCompile Include="SimNet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

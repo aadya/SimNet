@@ -76,6 +76,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -115,6 +116,26 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Array.h" />
+    <ClInclude Include="BaseCollection.h" />
+    <ClInclude Include="BaseNotifiee.h" />
+    <ClInclude Include="Exception.h" />
+    <ClInclude Include="HashMap.h" />
+    <ClInclude Include="LinkedList.h" />
+    <ClInclude Include="LinkedQueue.h" />
+    <ClInclude Include="ListRaw.h" />
+    <ClInclude Include="NamedInterface.h" />
+    <ClInclude Include="Ptr.h" />
+    <ClInclude Include="PtrInterface.h" />
+    <ClInclude Include="String.h" />
+    <ClInclude Include="Types.h" />
+    <ClInclude Include="TypeTraits.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BaseCollection.cpp" />
+    <ClCompile Include="BaseNotifiee.cpp" />
+    <ClCompile Include="Exception.cpp" />
+    <ClCompile Include="SimNet.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
