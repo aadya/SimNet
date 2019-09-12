@@ -76,8 +76,12 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -116,25 +120,43 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Activity.h" />
+    <ClInclude Include="ActivityImpl.h" />
+    <ClInclude Include="ActivityReactor.h" />
     <ClInclude Include="Array.h" />
     <ClInclude Include="BaseCollection.h" />
     <ClInclude Include="BaseNotifiee.h" />
+    <ClInclude Include="Engine.h" />
     <ClInclude Include="Exception.h" />
     <ClInclude Include="HashMap.h" />
+    <ClInclude Include="Instance.h" />
     <ClInclude Include="LinkedList.h" />
     <ClInclude Include="LinkedQueue.h" />
     <ClInclude Include="ListRaw.h" />
+    <ClInclude Include="Log.h" />
     <ClInclude Include="NamedInterface.h" />
+    <ClInclude Include="Nominal.h" />
+    <ClInclude Include="Notifiee.h" />
     <ClInclude Include="Ptr.h" />
     <ClInclude Include="PtrInterface.h" />
+    <ClInclude Include="Queue.h" />
+    <ClInclude Include="QueueReactor.h" />
+    <ClInclude Include="RealTimeActivityReactor.h" />
     <ClInclude Include="String.h" />
     <ClInclude Include="Types.h" />
     <ClInclude Include="TypeTraits.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="ActivityImpl.cpp" />
+    <ClCompile Include="ActivityReactor.cpp" />
     <ClCompile Include="BaseCollection.cpp" />
     <ClCompile Include="BaseNotifiee.cpp" />
+    <ClCompile Include="Engine.cpp" />
     <ClCompile Include="Exception.cpp" />
+    <ClCompile Include="Instance.cpp" />
+    <ClCompile Include="Log.cpp" />
+    <ClCompile Include="QueueReactor.cpp" />
+    <ClCompile Include="RealTimeActivityReactor.cpp" />
     <ClCompile Include="SimNet.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
